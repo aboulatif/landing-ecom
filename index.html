@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoutiqueChic - Accessoires de Luxe</title>
+    <link rel="stylesheet" href="css/product.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="min-h-screen bg-gray-50">
+        <!-- Header -->
+        <header class="header">
+            <nav class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <i data-lucide="shopping-bag" class="logo-icon"></i>
+                        <span class="logo-text">BoutiqueChic</span>
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="desktop-nav">
+                        <a href="#" class="nav-link">Accueil</a>
+                        <a href="#products" class="nav-link">Produits</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" onclick="toggleMenu()">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="mobile-nav" id="mobileNav">
+                    <a href="#" class="nav-link">Accueil</a>
+                    <a href="#products" class="nav-link">Produits</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Découvrez Notre Collection Exclusive</h1>
+                    <p>Des accessoires de luxe soigneusement sélectionnés pour votre style unique</p>
+                    <a href="#products" class="cta-button">Voir les Produits</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Nos Produits Populaires</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Montre Élégante">
+                        <div class="product-info">
+                            <h3>Montre Élégante</h3>
+                            <p>Une montre sophistiquée pour toutes les occasions</p>
+                            <div class="product-footer">
+                                <span class="price">25.000 fcfa</span>
+                                <button class="buy-button">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Sac en Cuir">
+                        <div class="product-info">
+                            <h3>Sac en Cuir</h3>
+                            <p>Sac artisanal en cuir véritable</p>
+                            <div class="product-footer">
+                                <span class="price">18.000 fcfa</span>
+                                <button class="buy-button">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80" alt="Lunettes de Soleil">
+                        <div class="product-info">
+                            <h3>Lunettes de Soleil</h3>
+                            <p>Protection UV avec style moderne</p>
+                            <div class="product-footer">
+                                <span class="price">12.000 fcfa</span>
+                                <button class="buy-button">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80" alt="Bracelet Or">
+                        <div class="product-info">
+                            <h3>Bracelet Or</h3>
+                            <p>Bijou élégant fait à la main</p>
+                            <div class="product-footer">
+                                <span class="price">22.000 fcfa</span>
+                                <button class="buy-button">Acheter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contactez-nous</h2>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i data-lucide="phone" class="contact-icon"></i>
+                        <span>+33 1 23 45 67 89</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail" class="contact-icon"></i>
+                        <span>contact@boutiquechic.ci</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin" class="contact-icon"></i>
+                        <span>Rue Nicolas Amenin, 330 Attécoubé</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <i data-lucide="shopping-bag" class="logo-icon"></i>
+                            <span>BoutiqueChic</span>
+                        </div>
+                        <p>Votre destination pour des accessoires de luxe uniques et élégants.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Liens Rapides</h3>
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#products">Produits</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-links">
+                            <a href="#"><i data-lucide="facebook" class="social-icon"></i></a>
+                            <a href="#"><i data-lucide="twitter" class="social-icon"></i></a>
+                            <a href="#"><i data-lucide="instagram" class="social-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 BoutiqueChic. Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (mobileNav.classList.contains('active')) {
+                menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
